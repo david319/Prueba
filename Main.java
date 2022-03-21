@@ -27,8 +27,10 @@ public class Main {
 
                 switch (opcion) {
                     case 0:
-                        System.out.println("Inicio");
+                        System.out.println("Obtener codigo \nOffsets: 0 o 4");
+                        int offset = leer.nextInt();
                         new ITunes();
+                        getCodigo(offset);
                         break;
                     case 1:
                         System.out.println("addSong");
